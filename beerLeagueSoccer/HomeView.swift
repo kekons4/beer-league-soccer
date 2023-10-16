@@ -10,7 +10,11 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationStack {
-            AsyncImage(url: URL(string: "https://resoluteac.com/wp-content/uploads/2021/03/logo.png"))
+//            AsyncImage(url: URL(string: "https://resoluteac.com/wp-content/uploads/2021/03/logo.png"))
+            Image(.logo)
+                .resizable()
+                .frame(width: 150, height: 150)
+
             TabView {
                 DashboardView()
                     .tabItem {
@@ -38,7 +42,7 @@ struct HomeView: View {
                         Text("Settings")
                     }
             }
-            .accentColor(.red)
+            .accentColor(.green)
         }
     }
 }
