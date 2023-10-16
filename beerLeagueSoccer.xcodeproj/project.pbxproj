@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */; };
-		D69604622ACB0A270004E1AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604612ACB0A270004E1AC /* ContentView.swift */; };
+		D69604622ACB0A270004E1AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604612ACB0A270004E1AC /* HomeView.swift */; };
 		D69604642ACB0A290004E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69604632ACB0A290004E1AC /* Assets.xcassets */; };
 		D69604672ACB0A290004E1AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69604662ACB0A290004E1AC /* Preview Assets.xcassets */; };
+		D696046E2AD446590004E1AC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696046D2AD446590004E1AC /* DashboardView.swift */; };
+		D69604702AD447130004E1AC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696046F2AD447130004E1AC /* SearchView.swift */; };
+		D69604722AD447700004E1AC /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604712AD447700004E1AC /* TeamView.swift */; };
+		D69604742AD447A20004E1AC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604732AD447A20004E1AC /* PlayerView.swift */; };
+		D69604762AD447D20004E1AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604752AD447D20004E1AC /* SettingsView.swift */; };
+		D69604792AD463A60004E1AC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604782AD463A60004E1AC /* Player.swift */; };
+		D696047C2AD71B0A0004E1AC /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696047B2AD71B0A0004E1AC /* GameCell.swift */; };
+		D696047E2AD9A5D20004E1AC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696047D2AD9A5D20004E1AC /* Team.swift */; };
+		D69604802AD9A8540004E1AC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696047F2AD9A8540004E1AC /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D696045C2ACB0A270004E1AC /* beerLeagueSoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beerLeagueSoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerLeagueSoccerApp.swift; sourceTree = "<group>"; };
-		D69604612ACB0A270004E1AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D69604612ACB0A270004E1AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D69604632ACB0A290004E1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D69604662ACB0A290004E1AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D696046D2AD446590004E1AC /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		D696046F2AD447130004E1AC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		D69604712AD447700004E1AC /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		D69604732AD447A20004E1AC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		D69604752AD447D20004E1AC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D69604782AD463A60004E1AC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D696047B2AD71B0A0004E1AC /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		D696047D2AD9A5D20004E1AC /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D696047F2AD9A8540004E1AC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,15 @@
 		D696045E2ACB0A270004E1AC /* beerLeagueSoccer */ = {
 			isa = PBXGroup;
 			children = (
+				D696047A2AD71AF10004E1AC /* Cells */,
+				D69604772AD462D60004E1AC /* DataStructures */,
 				D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */,
-				D69604612ACB0A270004E1AC /* ContentView.swift */,
+				D69604612ACB0A270004E1AC /* HomeView.swift */,
+				D696046F2AD447130004E1AC /* SearchView.swift */,
+				D69604712AD447700004E1AC /* TeamView.swift */,
+				D69604732AD447A20004E1AC /* PlayerView.swift */,
+				D69604752AD447D20004E1AC /* SettingsView.swift */,
+				D696046D2AD446590004E1AC /* DashboardView.swift */,
 				D69604632ACB0A290004E1AC /* Assets.xcassets */,
 				D69604652ACB0A290004E1AC /* Preview Content */,
 			);
@@ -65,6 +90,24 @@
 				D69604662ACB0A290004E1AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D69604772AD462D60004E1AC /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				D69604782AD463A60004E1AC /* Player.swift */,
+				D696047D2AD9A5D20004E1AC /* Team.swift */,
+				D696047F2AD9A8540004E1AC /* Event.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		D696047A2AD71AF10004E1AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D696047B2AD71B0A0004E1AC /* GameCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69604622ACB0A270004E1AC /* ContentView.swift in Sources */,
+				D69604762AD447D20004E1AC /* SettingsView.swift in Sources */,
+				D69604802AD9A8540004E1AC /* Event.swift in Sources */,
+				D69604702AD447130004E1AC /* SearchView.swift in Sources */,
+				D696047C2AD71B0A0004E1AC /* GameCell.swift in Sources */,
+				D69604622ACB0A270004E1AC /* HomeView.swift in Sources */,
+				D69604722AD447700004E1AC /* TeamView.swift in Sources */,
+				D69604792AD463A60004E1AC /* Player.swift in Sources */,
+				D69604742AD447A20004E1AC /* PlayerView.swift in Sources */,
+				D696046E2AD446590004E1AC /* DashboardView.swift in Sources */,
+				D696047E2AD9A5D20004E1AC /* Team.swift in Sources */,
 				D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +322,7 @@
 				DEVELOPMENT_TEAM = 38TKU655L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer League Soccer";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +352,7 @@
 				DEVELOPMENT_TEAM = 38TKU655L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer League Soccer";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
