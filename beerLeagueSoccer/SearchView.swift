@@ -9,8 +9,24 @@ import SwiftUI
 
 struct SearchView: View {
     
+    // Stores user search input
+    @State private var input: String = ""
+    // Stores suggested Teams in league
+    @State private var teams: [Team] = demoTeams
+    
     var body: some View {
-        Text("Search View")
+
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(teams, id: \.id) { team in
+                        TeamCell(team: team)
+                    }
+                }
+                .navigationTitle("Search")
+                .searchable(text: $input, prompt: "players, teams, leagues")
+            }
+        }
     }
 }
 

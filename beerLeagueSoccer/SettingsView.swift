@@ -10,7 +10,16 @@ import SwiftUI
 struct SettingsView: View {
     
     var body: some View {
-        Text("Settings View")
+        VStack {
+            
+            Image(.logo)
+                .resizable()
+                .frame(width: 150, height: 150)
+            
+            Text("Settings View")
+            
+            Spacer()
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65558642AE6CD8900FC0ED5 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */; };
 		D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */; };
 		D69604622ACB0A270004E1AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604612ACB0A270004E1AC /* HomeView.swift */; };
 		D69604642ACB0A290004E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69604632ACB0A290004E1AC /* Assets.xcassets */; };
@@ -20,9 +21,12 @@
 		D696047C2AD71B0A0004E1AC /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696047B2AD71B0A0004E1AC /* GameCell.swift */; };
 		D696047E2AD9A5D20004E1AC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696047D2AD9A5D20004E1AC /* Team.swift */; };
 		D69604802AD9A8540004E1AC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696047F2AD9A8540004E1AC /* Event.swift */; };
+		D69CBE0C2ADEF6D1005A1362 /* LoadingRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69CBE0B2ADEF6D1005A1362 /* LoadingRect.swift */; };
+		D6CA1C752AE197BA00711536 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA1C742AE197BA00711536 /* TeamCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		D696045C2ACB0A270004E1AC /* beerLeagueSoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beerLeagueSoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerLeagueSoccerApp.swift; sourceTree = "<group>"; };
 		D69604612ACB0A270004E1AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -37,6 +41,8 @@
 		D696047B2AD71B0A0004E1AC /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		D696047D2AD9A5D20004E1AC /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		D696047F2AD9A8540004E1AC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D69CBE0B2ADEF6D1005A1362 /* LoadingRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRect.swift; sourceTree = "<group>"; };
+		D6CA1C742AE197BA00711536 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		D696045E2ACB0A270004E1AC /* beerLeagueSoccer */ = {
 			isa = PBXGroup;
 			children = (
+				D69CBE0A2ADEF6AF005A1362 /* Animations */,
 				D696047A2AD71AF10004E1AC /* Cells */,
 				D69604772AD462D60004E1AC /* DataStructures */,
 				D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */,
@@ -106,8 +113,18 @@
 			isa = PBXGroup;
 			children = (
 				D696047B2AD71B0A0004E1AC /* GameCell.swift */,
+				D6CA1C742AE197BA00711536 /* TeamCell.swift */,
+				D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D69CBE0A2ADEF6AF005A1362 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D69CBE0B2ADEF6D1005A1362 /* LoadingRect.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					D696045B2ACB0A270004E1AC = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -182,12 +199,15 @@
 			files = (
 				D69604762AD447D20004E1AC /* SettingsView.swift in Sources */,
 				D69604802AD9A8540004E1AC /* Event.swift in Sources */,
+				D65558642AE6CD8900FC0ED5 /* PlayerCell.swift in Sources */,
 				D69604702AD447130004E1AC /* SearchView.swift in Sources */,
 				D696047C2AD71B0A0004E1AC /* GameCell.swift in Sources */,
 				D69604622ACB0A270004E1AC /* HomeView.swift in Sources */,
 				D69604722AD447700004E1AC /* TeamView.swift in Sources */,
+				D6CA1C752AE197BA00711536 /* TeamCell.swift in Sources */,
 				D69604792AD463A60004E1AC /* Player.swift in Sources */,
 				D69604742AD447A20004E1AC /* PlayerView.swift in Sources */,
+				D69CBE0C2ADEF6D1005A1362 /* LoadingRect.swift in Sources */,
 				D696046E2AD446590004E1AC /* DashboardView.swift in Sources */,
 				D696047E2AD9A5D20004E1AC /* Team.swift in Sources */,
 				D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */,
@@ -233,6 +253,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -293,6 +314,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -322,12 +344,12 @@
 				DEVELOPMENT_TEAM = 38TKU655L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Beer League Soccer";
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer League";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,12 +374,12 @@
 				DEVELOPMENT_TEAM = 38TKU655L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Beer League Soccer";
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer League";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

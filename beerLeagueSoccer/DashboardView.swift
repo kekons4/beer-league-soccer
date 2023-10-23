@@ -13,12 +13,16 @@ struct DashboardView: View {
     @State private var age: String = "28"
     
     var body: some View {
+        
         VStack {
+            Image(.logo)
+                .resizable()
+                .frame(width: 150, height: 150)
+            
             Text("Welcome back, \(firstName)")
                 .bold()
                 .font(.system(size: 35))
                 .padding([.top, .bottom], 30)
-            
             
             Text("Member card")
                 .bold()
@@ -27,21 +31,14 @@ struct DashboardView: View {
                 image.padding([.bottom], 50)
             }
             placeholder: {
-//                ProgressView()
-                Rectangle()
-                    .frame(width: 235, height: 120)
-                    .foregroundColor(.gray)
-                    .opacity(0.5)
-                    .cornerRadius(10)
-                    .padding([.bottom], 50)
-                    .animation(.easeInOut, value: true)
+                LoadingRect()
             }
             
             Text("Upcoming Games:")
                 .bold()
                 .font(.system(size: 30))
             
-            VStack {
+//            VStack {
                 List {
                     Section {
                         ForEach(upcomingEventsTest, id: \.id) { event in
@@ -50,7 +47,7 @@ struct DashboardView: View {
                         }
                     }
                 }
-            }
+//            }
             
             Spacer()
         }
