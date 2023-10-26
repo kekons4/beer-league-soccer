@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Player {
+struct Player: Hashable {
     var id: Int
     var firstName: String
     var lastName: String

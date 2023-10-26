@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D65558642AE6CD8900FC0ED5 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */; };
+		D65558662AEAAE4700FC0ED5 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65558652AEAAE4700FC0ED5 /* SettingsCell.swift */; };
 		D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */; };
 		D69604622ACB0A270004E1AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604612ACB0A270004E1AC /* HomeView.swift */; };
 		D69604642ACB0A290004E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69604632ACB0A290004E1AC /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		D65558652AEAAE4700FC0ED5 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		D696045C2ACB0A270004E1AC /* beerLeagueSoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beerLeagueSoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerLeagueSoccerApp.swift; sourceTree = "<group>"; };
 		D69604612ACB0A270004E1AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				D696047B2AD71B0A0004E1AC /* GameCell.swift */,
 				D6CA1C742AE197BA00711536 /* TeamCell.swift */,
 				D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */,
+				D65558652AEAAE4700FC0ED5 /* SettingsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				D696046E2AD446590004E1AC /* DashboardView.swift in Sources */,
 				D696047E2AD9A5D20004E1AC /* Team.swift in Sources */,
 				D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */,
+				D65558662AEAAE4700FC0ED5 /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

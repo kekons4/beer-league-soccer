@@ -19,14 +19,14 @@ struct PlayerCell: View {
             
             HStack {
                 VStack {
-                    Text("G")
+                    Text("Goals")
                         .bold()
                     Text("\(player.goals)")
                 }
                 .frame(width: 60)
                 
                 VStack {
-                    Text("A")
+                    Text("Assists")
                         .bold()
                     Text("\(player.assists)")
                 }

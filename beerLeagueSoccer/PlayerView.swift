@@ -83,6 +83,7 @@ struct PlayerView: View {
                 }
                 .padding(60)
                 .background(CustomColors.lightyellow)
+//                .foregroundColor(CustomColors.borderyellow)
                 .border(CustomColors.borderyellow, width: 5)
                 .clipShape(.rect(cornerRadius: 10))
                                 
@@ -121,6 +122,7 @@ struct PlayerView: View {
                 }
                 .padding(20)
                 .background(CustomColors.mellogreen)
+//                .foregroundColor(CustomColors.bordergreen)
                 .border(CustomColors.bordergreen, width: 5)
                 .clipShape(.rect(cornerRadius: 10))
                 
