@@ -23,9 +23,13 @@ struct LoadingRect: View {
                 .foregroundColor(.gray)
                 
             Rectangle()
+                .fill(
+                    LinearGradient(gradient: Gradient(colors: [CustomColors.mellogreen, .green]), startPoint: .leading, endPoint: .trailing)
+                )
                 .frame(width: width, height: 120)
                 .foregroundColor(.green)
-                .opacity(opacity)
+//                .background(LinearGradient(gradient: Gradient(colors: [.green, CustomColors.bordergreen]), startPoint: .leading, endPoint: .trailing))
+//                .opacity(opacity)
                 .cornerRadius(3.0)
                 .padding([.leading], -245)
                 .onAppear {

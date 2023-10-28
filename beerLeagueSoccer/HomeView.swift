@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @Environment (\.colorScheme) var colorScheme
         
     var body: some View {
         

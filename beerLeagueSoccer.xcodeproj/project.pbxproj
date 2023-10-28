@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D65558642AE6CD8900FC0ED5 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */; };
 		D65558662AEAAE4700FC0ED5 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65558652AEAAE4700FC0ED5 /* SettingsCell.swift */; };
+		D681A6B92AED78A600B78F9F /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681A6B82AED78A600B78F9F /* NotificationsView.swift */; };
+		D681A6BB2AED7DC700B78F9F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681A6BA2AED7DC700B78F9F /* ProfileView.swift */; };
 		D69604602ACB0A270004E1AC /* beerLeagueSoccerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */; };
 		D69604622ACB0A270004E1AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69604612ACB0A270004E1AC /* HomeView.swift */; };
 		D69604642ACB0A290004E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69604632ACB0A290004E1AC /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		D65558632AE6CD8900FC0ED5 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		D65558652AEAAE4700FC0ED5 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D681A6B82AED78A600B78F9F /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		D681A6BA2AED7DC700B78F9F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D696045C2ACB0A270004E1AC /* beerLeagueSoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beerLeagueSoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D696045F2ACB0A270004E1AC /* beerLeagueSoccerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerLeagueSoccerApp.swift; sourceTree = "<group>"; };
 		D69604612ACB0A270004E1AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -87,8 +91,10 @@
 				D69604732AD447A20004E1AC /* PlayerView.swift */,
 				D69604752AD447D20004E1AC /* SettingsView.swift */,
 				D696046D2AD446590004E1AC /* DashboardView.swift */,
+				D681A6B82AED78A600B78F9F /* NotificationsView.swift */,
 				D69604632ACB0A290004E1AC /* Assets.xcassets */,
 				D69604652ACB0A290004E1AC /* Preview Content */,
+				D681A6BA2AED7DC700B78F9F /* ProfileView.swift */,
 			);
 			path = beerLeagueSoccer;
 			sourceTree = "<group>";
@@ -207,7 +213,9 @@
 				D696047C2AD71B0A0004E1AC /* GameCell.swift in Sources */,
 				D69604622ACB0A270004E1AC /* HomeView.swift in Sources */,
 				D69604722AD447700004E1AC /* TeamView.swift in Sources */,
+				D681A6B92AED78A600B78F9F /* NotificationsView.swift in Sources */,
 				D6CA1C752AE197BA00711536 /* TeamCell.swift in Sources */,
+				D681A6BB2AED7DC700B78F9F /* ProfileView.swift in Sources */,
 				D69604792AD463A60004E1AC /* Player.swift in Sources */,
 				D69604742AD447A20004E1AC /* PlayerView.swift in Sources */,
 				D69CBE0C2ADEF6D1005A1362 /* LoadingRect.swift in Sources */,

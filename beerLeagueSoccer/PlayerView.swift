@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PlayerView: View {
     
+    @Environment (\.colorScheme) var colorScheme
+    
     @State var player: Player
     
     var body: some View {
@@ -83,7 +85,7 @@ struct PlayerView: View {
                 }
                 .padding(60)
                 .background(CustomColors.lightyellow)
-//                .foregroundColor(CustomColors.borderyellow)
+                .foregroundColor(colorScheme == .dark ? CustomColors.borderyellow : .black)
                 .border(CustomColors.borderyellow, width: 5)
                 .clipShape(.rect(cornerRadius: 10))
                                 
@@ -122,7 +124,7 @@ struct PlayerView: View {
                 }
                 .padding(20)
                 .background(CustomColors.mellogreen)
-//                .foregroundColor(CustomColors.bordergreen)
+                .foregroundColor(colorScheme == .dark ? CustomColors.bordergreen : .black)
                 .border(CustomColors.bordergreen, width: 5)
                 .clipShape(.rect(cornerRadius: 10))
                 

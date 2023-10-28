@@ -18,23 +18,22 @@ struct SettingsView: View {
                     .frame(width: 150, height: 150)
                 
                 List {
-                    HStack {
-                        Image(systemName: "person")
-                        NavigationLink("Profile") {PlayerView(player: rosterDemo[0])}
+                    Section("Settings"){
+                        HStack {
+                            Image(systemName: "person")
+                            NavigationLink("Profile") {ProfileView(player: rosterDemo[0])}
+                        }
+                        
+                        HStack {
+                            Image(systemName: "dollarsign.circle")
+                            NavigationLink("Payments") {TeamView(team: demoTeams[0])}
+                        }
+                        
+                        HStack {
+                            Image(systemName: "bell")
+                            NavigationLink("Notifications") {NotificationsView()}
+                        }
                     }
-                    
-                    HStack {
-                        Image(systemName: "dollarsign.circle")
-                        NavigationLink("Payments") {TeamView(team: demoTeams[0])}
-                    }
-                    
-//                    NavigationLink(value: "profile") {
-//                        SettingsCell()
-//                    }
-//                    .navigationDestination(for: Player.self) { player in
-//                        PlayerView(player: rosterDemo[0])
-//                    }
-
                 }
             }
             

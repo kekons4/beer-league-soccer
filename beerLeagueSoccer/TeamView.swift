@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TeamView: View {
     
+    @Environment (\.colorScheme) var colorScheme
+    
     @State var team: Team
     
     var body: some View {
@@ -98,6 +100,7 @@ struct TeamView: View {
                     }
                     .padding([.bottom, .top, .leading, .trailing], 30)
                 }
+                .foregroundColor(colorScheme == .dark ? CustomColors.borderyellow : .black)
                 .background(CustomColors.lightyellow)
                 .border(CustomColors.borderyellow, width: 5)
                 .clipShape(.rect(cornerRadius: 10.0))
@@ -173,6 +176,7 @@ struct TeamView: View {
                     }
                     .padding()
                 }
+                .foregroundColor(colorScheme == .dark ? CustomColors.bordergreen : .black)
                 .background(CustomColors.mellogreen)
                 .border(CustomColors.bordergreen, width: 5)
                 .clipShape(.rect(cornerRadius: 10))
@@ -190,6 +194,7 @@ struct TeamView: View {
                         }
                     }
                 }
+                .foregroundColor(colorScheme == .dark ? CustomColors.borderyellow : .black)
                 .background(CustomColors.lightyellow)
                 .border(CustomColors.borderyellow, width: 5)
                 .clipShape(.rect(cornerRadius: 10))
